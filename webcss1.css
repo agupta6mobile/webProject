@@ -1,0 +1,254 @@
+nav, header, footer {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, serif, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Helvetica Neue", Helvetica, serif, sans-serif;
+  margin: 0;
+  color: black;
+  /*background: linear-gradient(to right, grey, blue);*/
+}
+
+p{
+  font-size: 15;
+}
+.container{
+  width: 100%
+  margin:auto;
+  padding-top: 4%;
+  padding-bottom: 4%;
+
+}
+
+label{
+ font-size: 20px;
+  font-weight: bold;
+  center;
+}
+
+footer.foot1{
+  background-color: #666;
+  text-align: center;
+  color: white;
+  padding: 5px;
+}
+
+footer.foot1 ul{
+  list-style: none;
+  text-align: left;
+  padding: 0px;
+}
+
+footer.foot1 ul li{
+  line-height: 2.0;
+}
+
+
+/*####################### Navigation ################*/
+nav{
+  width: 100%;
+  margin: 0;
+}
+
+nav ul{
+  background-color: #eee;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+ul.topnav li{
+  list-style: none;
+  float:left;
+}
+ul li.topnav-right{
+  list-style: none;
+  float:right;
+}
+
+body p {
+  color: black;
+}
+
+ul.topnav li a{
+  display:block;
+  text-decoration: none;
+  min-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  padding:14px;
+  color: #666;
+}
+
+ul.topnav li a:hover{
+  background-color: #0080ff;
+  color:white;
+}
+
+ul.topnav li.mdropdown{
+  display: none;
+}
+
+/* ################### End of Navigation  ##############*/
+
+
+
+/* ################### Container top ##############*/
+#section1-gradient{
+  display: block;
+  background: linear-gradient(to bottom, blue, black);
+  /*background-color: #fff;*/
+}
+
+.row{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.row::after{
+  display: table;
+  clear: both;
+  content: "";
+  color: black;
+}
+
+h1.h1banner{
+  color: white;
+  font-size: 56px;
+  margin:0;
+  line-height: 70px;
+}
+
+form h2{
+  color: #fff;
+}
+
+h1.section2Header{
+text-align: left;
+ font-size: 15px;
+ color: black;
+ background-color: white;
+}
+
+/* the total columns should add to 12 */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+input[type="text"]{
+  font-size:20px;
+  width: 300px;
+  padding-left: 5px;
+  border-radius: 7px;
+}
+
+div.leftside-col{
+  margin-left: 10%
+}
+div.rightside-col{
+  margin-left: 10%;
+  margin-right: 2%;
+}
+
+input[type="password"]{
+  font-size:20px;
+  width: 300px;
+  padding-left: 5px;
+}
+
+
+/*#### services Container #######*/
+#servicescontainer{
+  background-color: white;
+}
+
+div.box {
+margin: 15px;
+text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.15),
+  0 2px 3px 0 rgba(0,0,0,.1);
+  padding: 2px;
+  border-radius: 10px;
+}
+
+
+
+
+/* ################### End of container  ##############*/
+
+
+/*############ Mobile ################ */
+@media all and (max-width: 600px) {
+  ul.topnav li:not(:nth-child(1)){
+    display: none;
+  }
+
+ul.topnav li.mdropdown{
+  display:block;
+  float:right;
+}
+
+ul.topnav.responsive li.mdropdown{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+ul.topnav.responsive{
+  position:relative;
+}
+
+ul.topnav.responsive li{
+  display:inline;
+  float:none;
+}
+
+ul.topnav.responsive li a{
+  display:block;
+  text-align: left;
+}
+
+div.col-6, div.col-3{
+  width: 100%;
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+div.leftside-col, div.rightside-col{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+input[type="text"]{
+  width: 200px;
+}
+input[type="password"]{
+  width: 200px;
+}
+
+
+div.videoContainer iframe{
+  position: relative; /*to keep it in its normal position we use normal*/
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: white;
+
+}
+}
+
+/* ########## end of MObile#######################*/
